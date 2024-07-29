@@ -275,12 +275,12 @@
           </div>
         </div>
         <div class="flex flex-col">
-          <div class="bg-black-650 shadow rounded-lg w-96 p-4 h-48 text-white">
+          <div class="bg-black-650 shadow rounded-lg w-96 p-4  text-white">
             <div class="pb-10">
               <p class="font-bold"> Languages</p>
             </div>
 
-            <div class="flex flex-wrap gap-x-2">
+            <div class="flex flex-wrap gap-x-2 gap-y-2">
               <div class="shadow bg-gray-900 rounded-lg p-2 w-16 h-16 flex justify-center items-center">
                 <img src="../assets/images/js.png" alt="" class="rounded-lg">
               </div>
@@ -296,6 +296,9 @@
               </div>
               <div class="shadow bg-gray-900 rounded-lg p-2 w-16 h-16 flex justify-center items-center">
                 <img src="../assets/images/python.png" alt="" class="rounded-lg">
+              </div>
+              <div class="shadow bg-gray-900 rounded-lg p-2 w-16 h-16 flex justify-center items-center">
+                <img src="../assets/images/typescript.png" alt="" class="rounded-lg">
               </div>
 
             </div>
