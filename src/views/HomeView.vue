@@ -1,9 +1,25 @@
 <script setup lang="ts">
-
+  
+    
+  
 </script>
 
+<script>
+
+  
+  export default {
+    data(vm) {
+      return {
+          grid:100,
+        }
+    },
+  };
+</script>
+  
 <template>
   <main>
+
+
 
     <div class="bg-gray-900">
       <header class="absolute inset-x-0 top-0 z-50">
@@ -94,7 +110,7 @@
                     aria-hidden="true">&rarr;</span></a>
               </div>
             </div> -->
-            <div class="">
+            <div class="z-200 shadow">
               <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl">Amener vos idées à l'existence grace
                 à mes
                 <span class="text-indigo-500 font-bold">services</span>
@@ -306,12 +322,16 @@
 
           <div class="bg-black-650 shadow rounded-lg w-96 p-4 h-52 text-white mt-2">
             <div class="pb-10">
-              <p> Divers</p>
+              <p class="font-bold">Base de données et Divers</p>
             </div>
 
             <div class="flex gap-x-2">
               <div class="shadow bg-gray-900 rounded-lg p-2 w-16 h-16 flex justify-center items-center">
                 <img src="../assets/images/postgres.png" alt="" class="rounded-lg">
+              </div>
+
+              <div class="shadow bg-gray-900 rounded-lg p-2 w-16 h-16 flex justify-center items-center">
+                <img src="../assets/images/mysql.png" alt="" class="rounded-lg">
               </div>
               <div class="shadow bg-gray-900 rounded-lg p-2 w-16 h-16 flex justify-center items-center">
                 <img src="../assets/images/photoshop.png" alt="" class="rounded-lg">
@@ -332,21 +352,99 @@
     </div>
     <div class="mx-auto mt-20 mb-20 w-128">
       <div class="text-center">
-        <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Meilleurs projets
+        <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Recents projets
         </h2>
         <p class="mt-6 text-lg leading-8 text-white">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
           qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
 
       </div>
     </div>
-    <div class="mx-auto flex justify-center gap-x-4">
+    <div class="mx-auto flex justify-center gap-x-10">
       <div>
         <div>
           <div class="flex gap-x-2 relative">
-            <div class="shadow bg-black-650  w-96  h-96 p-4 rounded-lg text-white">
+            <div class="shadow bg-black-650  w-72  h-96 p-4 rounded-lg text-white">
 
             </div>
-            <div class="shadow absolute bg-black-750 w-96 p-4 h-96 rounded-lg  text-white  rotate-6 hover:rotate-2">
+            <div
+              class="shadow absolute bg-black-750 w-72 cursor-pointer p-4 h-96 rounded-lg  text-white  rotate-2 hover:rotate-6">
+              <img src="../assets/images/portfolio.png" alt="" class="rounded-lg ">
+
+              <div class="pt-20">
+                <div class="flex flex-col ">
+                  <span class="font-bold text-xl">Portfolio</span>
+                  Mon portfolio
+                </div>
+              </div>
+              <div class="absolute right-2.5 bottom-2">
+                <div class="flex gap-x-2 justify-center items-center">
+                  <div>
+                    <img src="../assets/images/vuejs.png" alt="" class=" w-6">
+                  </div>
+                  <div>
+                    <img src="../assets/images/tailwind.png" alt="" class=" w-6">
+                  </div>
+                  <div>
+                    <img src="../assets/images/typescript.png" alt="" class=" w-6">
+                  </div>
+                </div>
+              </div>
+              <div class="absolute left-2.5 bottom-2">
+                <a href="#" class="text-sm font-semibold leading-6 text-white">Github <span
+                    aria-hidden="true">→</span></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <div class="flex gap-x-2 relative">
+            <div class="shadow bg-black-650  w-72  h-96 p-4 rounded-lg text-white">
+
+            </div>
+            <div
+              class="shadow absolute bg-black-750 w-72 cursor-pointer p-4 h-96 rounded-lg  text-white  rotate-2 hover:rotate-6">
+              <img src="../assets/images/esugu.png" alt="" class="rounded-lg w-full">
+
+              <div class="pt-10">
+                <div class="flex flex-col ">
+                  <span class="font-bold text-xl">Esugu</span>
+                  Application mobile e-commerciale dont sur laquelle j'ai travaillé pendant mes 2 ans dans l'entreprise
+                  DD VISION (Lome - Togo)
+                </div>
+              </div>
+              <div class="absolute right-2.5 bottom-2">
+                <div class="flex gap-x-2 justify-center items-center">
+                  <div>
+                    <img src="../assets/images/laravel.png" alt="" class=" w-6">
+                  </div>
+                  <div>
+                    <img src="../assets/images/flutter.png" alt="" class=" w-6">
+                  </div>
+
+                </div>
+              </div>
+              <div class="absolute left-2.5 bottom-2">
+                <a href="https://africa.esugu-app.com/" class="text-sm font-semibold leading-6 text-white">Site Web
+                  <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <div class="flex gap-x-2 relative">
+            <div class="shadow bg-black-650  w-72  h-96 p-4 rounded-lg text-white">
+
+            </div>
+            <div
+              class="shadow absolute cursor-pointer bg-black-750 w-72 p-4 h-96 rounded-lg  text-white  rotate-2 hover:rotate-6">
               <img src="../assets/images/dashboard.png" alt="" class="rounded-lg ">
 
               <div class="pt-20">
@@ -355,11 +453,143 @@
                   Un boilerplate de developpement en laravel
                 </div>
               </div>
+              <div class="absolute right-2.5 bottom-2">
+                <div class="flex gap-x-2 justify-center items-center">
+                  <div>
+                    <img src="../assets/images/laravel.png" alt="" class=" w-6">
+                  </div>
+                  <div>
+                    <img src="../assets/images/tailwind.png" alt="" class=" w-6">
+                  </div>
+                  <div>
+                    <img src="../assets/images/flowbite.png" alt="" class=" w-6">
+                  </div>
+                </div>
+              </div>
+              <div class="absolute left-2.5 bottom-2">
+                <a href="#" class="text-sm font-semibold leading-6 text-white">Github
+                  <span aria-hidden="true">→</span></a>
+              </div>
             </div>
 
           </div>
         </div>
       </div>
+    </div>
+  </article>
+  <article class="mt-72">
+    <div class="mx-auto flex justify-center gap-x-4">
+
+      <div class="w-128">
+        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl">Des applications mobiles codées sur
+          <span class="text-indigo-500 font-bold">mésure</span>
+        </h1>
+        <p class="mt-6 text-lg leading-8 text-white">Je vous propose mes services de création d'application mobile . Je
+          peux également intervenir sur des
+          projets flutter existants </p>
+        <div class="mt-10 flex items-center justify-start gap-x-6">
+          <a href="#"
+            class="rounded-md bg-black-750 px-3.5 py-2.5 flex justify-center gap-x-2 items-center text-sm font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+            <img src="../assets/images/github.png" alt="" class="h-6 w-6">
+            <span class="pt-0.5 font-bold"> Github</span>
+          </a>
+
+        </div>
+      </div>
+      <div class="relative">
+        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          aria-hidden="true">
+          <div
+            class="relative right-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+          </div>
+        </div>
+        <div>
+          <img src="../assets/images/mobile1.jpg" alt="" class=" ">
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="flex justify-center text-center mt-20">
+      <div class="w-128">
+        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl">Des applications web
+          <span class="text-indigo-500 font-bold">peformantes</span>
+        </h1>
+        <p class="mt-6 text-lg leading-8 text-white">Je peux intervenir sur des applications web tournant sur laravel et
+          vue.js . Télécharger ce template gratuite sur mon github </p>
+        <div class="mt-10 flex items-center justify-center gap-x-6 mb-10">
+          <a href="#"
+            class="rounded-md bg-black-750 px-3.5 py-2.5 flex justify-center gap-x-2 items-center text-sm font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+            <img src="../assets/images/github.png" alt="" class="h-6 w-6">
+            <span class="pt-0.5 font-bold"> Github</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mx-auto flex justify-center gap-x-4">
+      <div class="relative">
+        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          aria-hidden="true">
+          <div
+            class="relative right-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <img src="../assets/images/vue-admin2.png" alt="" class=" w-2/3 rounded-lg shadow ">
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+  </article>
+
+  <article class="mt-72">
+    <div class="mx-auto flex justify-center gap-x-4">
+
+      <div class="relative">
+        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          aria-hidden="true">
+          <div
+            class="relative right-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+          </div>
+        </div>
+        <div>
+          <img src="../assets/images/mobile1.jpg" alt="" class=" h-96 ">
+        </div>
+
+      </div>
+      <!-- pi-angle-down -->
+      <div class="w-128">
+        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl">Des applications mobiles codées sur
+          <span class="text-indigo-500 font-bold">mésure</span>
+        </h1>
+        <p class="mt-6 text-lg leading-8 text-white">Je vous propose mes services de création d'application mobile . Je
+          peux également intervenir sur des
+          projets flutter existants </p>
+
+        <div class="mt-10 flex items-center justify-start gap-x-6">
+          <a href="#"
+            class="rounded-md bg-black-750 px-3.5 py-2.5 flex justify-center gap-x-2 items-center text-sm font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+            <img src="../assets/images/github.png" alt="" class="h-6 w-6">
+            <span class="pt-0.5 font-bold"> Github</span>
+          </a>
+
+        </div>
+
+      </div>
+
     </div>
   </article>
 
